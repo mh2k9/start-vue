@@ -1,0 +1,141 @@
+{
+  "what-is-vue": {
+    "description": "",
+    "list": [
+      "Vue (pronounced like view)",
+      "Progressive framework for building user interfaces",
+      "The core library is focused on the view layer only"
+    ]
+  },
+  "why-vue": {
+    "description": "Well-defined ecosystem. Vue's defined ecosystem is a massive advantage because it allows developers to choose a solution to a specific problem efficiently. Vue may focus on the view layer, but with the help of Vuex, Vue Router, Vue Test Utils, and Vue CLI, it also provides recommended solutions to common problems.",
+    "list": [
+      "Very Small Size",
+      "Easy to Understand and Develop",
+      "Simple Integration",
+      "Detailed Documentation",
+      "Integrate with other libraries or existing projects"
+    ]
+  },
+  "environment-setup": {
+    "description": "",
+    "list": [
+      "<code>$ sudo npm install vue</code>",
+      "<code>$ sudo npm install --global vue-cli</code>",
+      "<code>$ sudo vue init webpack myproject</code>",
+      "<code>$ sudo cd myproject</code>",
+      "<code>$ sudo npm start</code>"
+    ]
+  },
+  "points-of-vue": {
+    "list": [
+      "<code>Directive</code>",
+      "<code>v-bind</code>",
+      "<code>v-model</code>",
+      "<code>v-on:event | @event</code>",
+      "<code>el: '#id'</code>",
+      "<code>data: { /* prop stuffs */ }</code>",
+      "<code>methods: { /* methods stuffs */ }</code>"
+    ]
+  },
+  "instances": {
+    "img": "instance.png"
+  },
+  "template": {
+    "img": "template.png"
+  },
+  "components": {
+    "img": "component.png"
+  },
+  "computed-properties": {
+    "img": "computed.png"
+  },
+  "watch-property": {
+    "img": "watch.png"
+  },
+  "binding": {
+    "img": "bind.png"
+  },
+  "events": {
+    "img": "events.png"
+  },
+  "rendering": {
+    "list": [
+      "<code><a href='https://www.tutorialspoint.com/vuejs/vuejs_rendering.htm' target='_blank'>v-if</a></code>",
+      "<code>v-else-if</code>",
+      "<code>v-else</code>",
+      "<code>v-show</code>",
+      "<code>v-for</code>"
+    ],
+    "img": "rendering.png"
+  },
+  "directives": {
+    "description": "Directives are instruction for VueJS to do things in a certain way. We have already seen directives such as",
+    "list": [
+      "<a href='https://www.tutorialspoint.com/vuejs/vuejs_directives.htm' target='_blank'>v-if, v-show, v-else, v-for, v-bind , v-model, v-on, etc.</a>"
+    ],
+    "img": "directives.png"
+  },
+  "routing": {
+    "description": "Vue Router is the official router for Vue.js. It deeply integrates with Vue.js core to make building Single Page Applications with Vue.js a breeze.",
+    "list": [
+      "<a href='https://www.tutorialspoint.com/vuejs/vuejs_routing.htm' target='_blank'>Vue Router</a> supports nested route/view mapping",
+      "Modular, component-based router configuration",
+      "Route params, query, wildcards",
+      "View transition effects",
+      "Fine-grained navigation control",
+      "Links with automatic active CSS classes",
+      "HTML5 history mode or hash mode",
+      "Auto-fallback in IE9",
+      "Customizable Scroll Behavior"
+    ],
+    "img": "routing.png"
+  },
+  "mixins": {
+    "list": [
+      "Basically used for components",
+      "For reusable, reduce code stuffs",
+      "All <a href='https://www.tutorialspoint.com/vuejs/vuejs_mixins.htm' target='_blank'>mixing</a> properties become member of components"
+    ],
+    "img": "mixins.png"
+  },
+  "render-function": {
+    "list": [
+      "<a href='https://www.tutorialspoint.com/vuejs/vuejs_render_function.htm' target='_blank'>Render<a> data/values to template",
+      "Use for repetitive components",
+      "Use data dynamically using <i>slot</i>",
+      "Pass data using <i>props</i> attributes"
+    ],
+    "img": "render.png"
+  },
+  "reactive-interface": {
+    "list": [
+      "<a href='https://www.tutorialspoint.com/vuejs/vuejs_reactive_interface.htm' target='_blank'>VueInstance.$watch()</a> the change of certain property",
+      "<a href='https://www.tutorialspoint.com/vuejs/vuejs_reactive_interface.htm' target='_blank'>Vue.set</a> to add a property to the vue instance",
+      "<a href='https://www.tutorialspoint.com/vuejs/vuejs_reactive_interface.htm' target='_blank'>Vue.delete</a> to remove a certain property from the vue instance"
+    ]
+  },
+  "pwa": {
+    "list": [
+      "<b>Reliable</b> - Load instantly and never show the downasaur, even in uncertain network conditions.",
+      "<b>Fast</b> - Respond quickly to user interactions with silky smooth animations and no janky scrolling.",
+      "<b>Engaging</b> - Feel like a natural app on the device, with an immersive user experience.",
+      "Home scree supported",
+      "Native flavor",
+      "Offline support",
+      "Responsive design"
+    ]
+  },
+  "component-lifecycle": {
+    "img": "component-lifecycle.png"
+  },
+  "references": {
+    "list": [
+      "<a href='https://vuejs.org/v2/guide/' target='_blank'>https://vuejs.org/v2/guide/</a>",
+      "<a href='https://www.tutorialspoint.com/vuejs/' target='_blank'>https://www.tutorialspoint.com/vuejs/</a>"
+    ]
+  },
+  "questions-and-answers": {
+    "img": "qa.png"
+  }
+}
