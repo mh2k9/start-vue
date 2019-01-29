@@ -55,13 +55,13 @@ p {
 
 ul li {
   font-size: 40px;
-  color: #FF5;
+  color: #FFF;
   width: 50%;
   text-align: left;
   margin: 0 auto;
   font-weight: bold;
 }
-/*img {
-  border: 1px solid #fff;
-}*/
+a {
+  text-decoration: none !important;
+}
 </style>

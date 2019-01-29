@@ -70,9 +70,9 @@
     "img": "rendering.png"
   },
   "directives": {
-    "description": "Directives are instruction for VueJS to do things in a certain way. We have already seen directives such as",
     "list": [
-      "<a href='https://www.tutorialspoint.com/vuejs/vuejs_directives.htm' target='_blank'>v-if, v-show, v-else, v-for, v-bind , v-model, v-on, etc.</a>"
+      "<a href='https://www.tutorialspoint.com/vuejs/vuejs_directives.htm' target='_blank'>Directives are instruction for VueJS to do things in a certain way.</a>",
+      "Directive examples: v-if, v-show, v-else, v-for, v-bind , v-model, v-on, etc."
     ],
     "img": "directives.png"
   },
@@ -132,7 +132,8 @@
   "references": {
     "list": [
       "<a href='https://vuejs.org/v2/guide/' target='_blank'>https://vuejs.org/v2/guide/</a>",
-      "<a href='https://www.tutorialspoint.com/vuejs/' target='_blank'>https://www.tutorialspoint.com/vuejs/</a>"
+      "<a href='https://www.tutorialspoint.com/vuejs/' target='_blank'>https://www.tutorialspoint.com/vuejs/</a>",
+      "<a href='https://vuejsdevelopers.com/2018/04/23/vue-boilerplate-template-scaffold/' target='_blank'>https://vuejsdevelopers.com/2018/04/23/vue-boilerplate-template-scaffold/</a>"
     ]
   },
   "questions-and-answers": {
