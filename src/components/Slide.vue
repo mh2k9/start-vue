@@ -6,7 +6,10 @@
         <li v-for="(item, key) in getList(details[topic])" :key="key" v-html="item"></li>
       </ul>
     </div>
-    <img v-if="(typeof details[topic] !== 'undefined' && typeof details[topic].img !== 'undefined')" :src="getImgUrl(details[topic])"/>
+    <img
+      v-if="(typeof details[topic] !== 'undefined' && typeof details[topic].img !== 'undefined')"
+      v-bind:alt="topic"
+      :src="getImgUrl(details[topic])"/>
   </div>
 </template>
 
