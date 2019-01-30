@@ -14,8 +14,11 @@
   font-variant: small-caps;
 }
 
-h1, h2, h3, h4 {
+h4 {
   font-weight: bold !important;
+}
+
+h1, h2, h3, h4 {
   color: DarkSlateGrey !important;
 }
 

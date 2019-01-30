@@ -89,12 +89,9 @@
 ---
 @title[Vue Instance]
 
-@snap[west span-50]
-## Every Vue application starts by creating a new Vue instance with the Vue function:
-@snapend
+#### Every Vue application starts by creating a new Vue instance with the Vue function:
 
-@snap[east span-50]
-```
+```html
 <html>
    <head>
       <title>VueJs Instance</title>
@@ -124,4 +121,3 @@
    </body>
 </html>
 ```
-@snapend
