@@ -1,5 +1,7 @@
 .spaced li {
   margin:0 0 10px 0;
+  color: #000;
+  font-weight: bold;
 }
 
 .shadow {
@@ -10,6 +12,10 @@
   color: black;
   letter-spacing: 0.05em;
   font-variant: small-caps;
+}
+
+h4 {
+  font-weight: bold;
 }
 
 .reveal section img {
