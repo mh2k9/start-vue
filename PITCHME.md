@@ -94,7 +94,7 @@
 @snapend
 
 @snap[east span-50]
-```html
+```
 <html>
    <head>
       <title>VueJs Instance</title>
