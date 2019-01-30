@@ -87,8 +87,6 @@
 @snapend
 
 ---
-@title[Vue Instance]
-
 Every Vue application starts by creating a new [Vue Instance](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram) with the Vue function:
 
 ```js
@@ -98,8 +96,6 @@ var vm = new Vue({
 ```
 
 ---
-@title[Vue Template]
-
 Vue.js uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying Vue instance’s data. All Vue.js templates are valid HTML that can be parsed by spec-compliant browsers and HTML parsers
 
 ```html
