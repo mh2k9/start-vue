@@ -1,4 +1,4 @@
-@title[Basic concepts on VueJS]
+#### Basic concepts on VueJS
 
 @snap[auth-pic]
 ![](src/assets/photo.png)
@@ -10,13 +10,14 @@
 
 
 ---
+#### Author of VueJS
 @snap[auth-pic]
 ![](src/assets/evan.jpeg)
 @snapend
 
 ## Evan You
 ### Creator Vue & Core Dev at Meteor
-#### Previously worked as a Creative Technologist at Google. From 2016 working full-time on Vue.JS framework
+### Previously worked as a Creative Technologist at Google. From 2016 working full-time on Vue.JS framework
 
 ---
 @title[What is Vue]
@@ -333,21 +334,14 @@ Basically used for components. For reusable, reduce code stuffs. All properties 
 <div id = "component_test">
    <testcomponent v-bind:itemid="item">Hello Jai</testcomponent>
    <testcomponent v-bind:itemid="item">Hello Roy</testcomponent>
-   <testcomponent v-bind:itemid="item">Hello Ria</testcomponent>
-   <testcomponent v-bind:itemid="item">Hello Ben</testcomponent>
 </div>
 <script type = "text/javascript">
    Vue.component('testcomponent',{
       template : '<h1><slot></slot></h1>',
-      data: function() {
-        item: "an item"
-      },
-      methods:{
-      }
+      data: function() {item: "an item"},
+      methods:{}
    });
-   var vm = new Vue({
-      el: '#component_test'
-   });
+   var vm = new Vue({el: '#component_test'});
 </script>
 ```
 
@@ -361,13 +355,7 @@ Basically used for components. For reusable, reduce code stuffs. All properties 
 ```html
 <script type = "text/javascript">
    var myproduct = {"id":1, name:"book", "price":"20.00"};
-   var vm = new Vue({
-      el: '#app',
-      data: {
-         counter: 1,
-         products: myproduct
-      }
-   });
+   var vm = new Vue({el: '#app',data: {counter: 1,products: myproduct}});
    Vue.set(myproduct, 'quantity');
    Vue.delete(myproduct, 'price');
    vm.$watch('counter', function(nval, oval) {
@@ -387,8 +375,7 @@ Basically used for components. For reusable, reduce code stuffs. All properties 
 - Fast - Respond quickly to user interactions with silky smooth animations and no janky scrolling.
 - Engaging - Feel like a natural app on the device, with an immersive user experience.
 - Home scree supported
-- Native flavor
-- Offline support
+- Native flavor and Offline support
 - Responsive design
 @ulend
 @snapend
@@ -403,6 +390,6 @@ Basically used for components. For reusable, reduce code stuffs. All properties 
 ---
 #### Question ans Answer
 
-@snap[north-west]
+@snap[auth-pic]
 ![](src/assets/qa.png)
 @snapend
