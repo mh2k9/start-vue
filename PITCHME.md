@@ -122,6 +122,11 @@ Vue.js uses an HTML-based template syntax that allows you to declaratively bind 
 Components are reusable Vue instances with a name. We can use this component as a custom element inside a root Vue instance
 
 ```html
+<div id="components-demo">
+  <button-counter></button-counter>
+</div>
+
+<script>
 Vue.component('button-counter', {
   data: function () {
     return {
@@ -131,10 +136,58 @@ Vue.component('button-counter', {
   template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
 })
 
-<div id="components-demo">
-  <button-counter></button-counter>
+new Vue({ el: '#components-demo' })
+</script>
+```
+
+---
+#### Vue Computed Properties
+Reduce the complexity the logical calculation in template
+
+```html
+<!--Complex calculation in template-->
+<div id="example">
+  {{ message.split('').reverse().join('') }}
 </div>
 
-new Vue({ el: '#components-demo' })
+<div id="example">
+  <p>Computed reversed message: "{{ reversedMessage }}"</p>
+</div>
+<script>
+var vm = new Vue({
+  el: '#example',
+  data: { message: 'Hello' },
+  computed: {
+    reversedMessage: function () {
+      return this.message.split('').reverse().join('')
+    }
+  }
+})
+</script>
+```
 
+---
+#### Vue Watched Properties
+A more generic way to observe and react to data changes on a Vue instance
+
+```html
+<div id="demo">{{ fullName }}</div>
+<script>
+var vm = new Vue({
+  el: '#demo',
+  data: {
+    firstName: 'Foo',
+    lastName: 'Bar',
+    fullName: 'Foo Bar'
+  },
+  watch: {
+    firstName: function (val) {
+      this.fullName = val + ' ' + this.lastName
+    },
+    lastName: function (val) {
+      this.fullName = this.firstName + ' ' + val
+    }
+  }
+})
+</script>
 ```
