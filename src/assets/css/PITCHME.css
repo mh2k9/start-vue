@@ -47,6 +47,10 @@ h1, h2, h3, h4 {
   border-radius: 4px;
 }
 
+p {
+  text-align: left !important;
+  color: DarkSlateGrey;
+}
 
 body {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
