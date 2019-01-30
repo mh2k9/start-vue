@@ -234,9 +234,13 @@ Manipulate or assign values to HTML attributes, change the style, and assign cla
 ```html
 <button v-on:click = "displaynumbers">Click ME</button>
 <button @click = "displaynumbers">Click ME</button>
+
 <div v-bind:style = "styleobj" v-on:mouseover = "changebgcolor" v-on:mouseout = "originalcolor"></div>
+
 <button v-on:click.once = "buttonclicked">Click Once</button>
+
 <a href = "http://www.google.com" v-on:click.prevent = "clickme">Click Me</a>
+
 <input type = "text"  v-on:keyup.enter = "showinputvalue"/>
 <input type = "text"  v-on:keyup.ctrl.enter = "showinputvalue"/>
 ```
