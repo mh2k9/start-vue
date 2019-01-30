@@ -43,6 +43,11 @@ h1, h2, h3, h4 {
   height: 200px;
 }
 
+.hljs {
+  border-radius: 4px;
+}
+
+
 body {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
   background: #f0f9ff; /* Old browsers */
