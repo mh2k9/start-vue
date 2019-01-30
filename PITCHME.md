@@ -19,7 +19,7 @@
 #### Previously worked as a Creative Technologist at Google. From 2016 working full-time on Vue.JS framework
 
 ---?color=#E58537
-## @color[cyan](**Add A Little Imagination**)
+### @color[cyan](**What is Vue?**)
 
 @snap[west span-55]
 @ul[spaced text-white]
