@@ -19,22 +19,17 @@
 #### Previously worked as a Creative Technologist at Google. From 2016 working full-time on Vue.JS framework
 
 ---
-## @color[cyan](**What is Vue?**)
+---?color=#E58537
+@title[Add A Little Imagination]
 
-@snap[north span-55]
+@snap[north-west]
+#### Add a splash of @color[cyan](**color**) and you are ready to start presenting...
+@snapend
+
+@snap[west span-55]
 @ul[spaced text-white]
 - Vue (pronounced like view)
 - Progressive framework for building user interfaces
 - The core library is focused on the view layer only
 @ulend
-@snapend
-
----?image=assets/img/presenter.jpg
-
-@snap[north span-100 headline]
-## Now It's Your Turn
-@snapend
-
-@snap[south span-100 text-06]
-[Click here to jump straight into the interactive feature guides in the GitPitch Docs @fa[external-link]](https://gitpitch.com/docs/getting-started/tutorial/)
 @snapend
