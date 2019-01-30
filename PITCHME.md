@@ -95,29 +95,27 @@
 <html>
    <head>
       <title>VueJs Instance</title>
-      <script type = "text/javascript" src = "js/vue.js"></script>
+      <script type = "text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
    </head>
    <body>
       <div id = "vue_det">
-         <h1>Firstname : {{firstname}}</h1>
-         <h1>Lastname : {{lastname}}</h1>
-         <h1>{{mydetails()}}</h1>
+         <p>Firstname : {{firstname}}</p>
+         <p>Lastname : {{lastname}}</p>
+         <p>{{mydetails()}}</p>
       </div>
-      <script type = "text/javascript">
+      <script type="text/javascript">
         var  vm = new Vue({
            el: '#vue_det',
            data: {
-              firstname : "Ria",
-              lastname  : "Singh",
-              address    : "Mumbai"
+              firstname : "Ria", lastname  : "Singh", address    : "Mumbai"
            },
            methods: {
               mydetails : function() {
-                 return "I am "+this.firstname +" "+ this.lastname;
+                 return "I am " + this.firstname + " " + this.lastname;
               }
            }
         })
-    </script>
+      </script>
    </body>
 </html>
 ```
