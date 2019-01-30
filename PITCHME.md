@@ -58,26 +58,11 @@
 @snapend
 
 @snap[west span-100]
-- Install vue
-```bash
-$ sudo npm install vue
-```
-- Install vue CLI
-```bash
-$ sudo npm install --global vue-cli
-```
-- Create/initialize vue project
-```bash
-$ sudo vue init webpack start-vue
-```
-- Go to created directory
-```bash
-$ sudo cd start-vue
-```
-- Run app/project
-```bash
-$ sudo npm start
-```
+@ul[spaced text-white]
+- $ sudo npm install vue,
+- $ sudo npm install --global vue-cli
+- $ sudo vue init webpack start-vue
+- $ sudo cd start-vue
+- $ sudo npm start
+@ulend
 @snapend
-
-
