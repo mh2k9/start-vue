@@ -324,12 +324,6 @@ Basically used for components. For reusable, reduce code stuffs. All properties 
 
 ---
 #### Render function
-The content that needs to be reused across the project. We can convert the same as a component and use it.
-
----
-#### Render function
-
-
 - Render data/values to template
 - Used for repetitive components
 - Data isolation using <i>slot</i>
@@ -383,7 +377,9 @@ The content that needs to be reused across the project. We can convert the same 
 ```
 
 ---
+@snap[north-west]
 #### Progressive Web App (PWA)
+@snapend
 
 @snap[west span-100]
 @ul[spaced text-white]
@@ -406,4 +402,7 @@ The content that needs to be reused across the project. We can convert the same 
 
 ---
 #### Question ans Answer
+
+@snap[north-west]
 ![](src/assets/qa.png)
+@snapend
