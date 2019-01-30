@@ -32,3 +32,12 @@
   width: 200px;
   height: 200px;
 }
+
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
+  background: #f0f9ff; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
