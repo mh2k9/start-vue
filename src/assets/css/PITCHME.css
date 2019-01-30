@@ -1,6 +1,6 @@
 .spaced li {
   margin:0 0 10px 0;
-  color: #000;
+  color: DarkSlateGrey;
   font-weight: bold;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .headline h2 {
-  color: black;
+  color: DarkSlateGrey;
   letter-spacing: 0.05em;
   font-variant: small-caps;
 }
@@ -26,7 +26,7 @@ h4 {
 }
 
 .reveal a {
-  color: black;
+  color: DarkSlateGrey;
 }
 
 .reveal a:hover {
