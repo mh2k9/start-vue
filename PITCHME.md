@@ -90,10 +90,23 @@
 #### Vue Instance
 Every Vue application starts by creating a new [Vue Instance](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram) with the Vue function:
 
-```js
+```html
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<!-- production version, optimized for size and speed -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<!--Create instance-->
+<script>
 var vm = new Vue({
-  // options
+  el: '#databinding',
+  data: {},
+  methods : {},
+  computed: {},
+  watch: {},
 })
+</script>
 ```
 
 ---
@@ -187,6 +200,72 @@ var vm = new Vue({
     lastName: function (val) {
       this.fullName = this.firstName + ' ' + val
     }
+  }
+})
+</script>
+```
+
+---
+#### Vue Binding
+Manipulate or assign values to HTML attributes, change the style, and assign classes with the help of binding directive called v-bind available with VueJS.
+
+```html
+<div id = "databinding">
+   {{title}}<br/>
+   <a href = "hreflink" target = "_blank"> Click Me </a> <br/>
+   <a href = "{{hreflink}}" target = "_blank">Click Me </a>  <br/>
+   <a v-bind:href = "hreflink" target = "_blank">Click Me </a>   <br/>
+</div>
+<script type = "text/javascript">
+   var vm = new Vue({
+      el: '#databinding',
+      data: {
+         title : "DATA BINDING",
+         hreflink : "http://www.google.com"
+      }
+   });
+</script>
+```
+
+---
+#### Vue Events
+**v-on** is the attribute added to the DOM elements to listen to the events in VueJS.
+
+```html
+<button v-on:click = "displaynumbers">Click ME</button>
+<button @click = "displaynumbers">Click ME</button>
+<div v-bind:style = "styleobj" v-on:mouseover = "changebgcolor" v-on:mouseout = "originalcolor"></div>
+<button v-on:click.once = "buttonclicked">Click Once</button>
+<a href = "http://www.google.com" v-on:click.prevent = "clickme">Click Me</a>
+<input type = "text"  v-on:keyup.enter = "showinputvalue"/>
+<input type = "text"  v-on:keyup.ctrl.enter = "showinputvalue"/>
+```
+
+---
+#### Rendering
+Vue supports conditional and list rendering
+
+```html
+<!--Conditional-->
+<div v-if="type === 'A'">A</div>
+<div v-else-if="type === 'B'">B</div>
+<div v-else-if="type === 'C'">C</div>
+<div v-else>Not A/B/C</div>
+
+<!--List rendering-->
+<ul id="example-1">
+  <li v-for="item in items">
+    {{ item.message }}
+  </li>
+</ul>
+<script>
+var example1 = new Vue({
+  el: '#example-1',
+  data: {
+    items: [
+      { message: 'Foo' },
+      { message: 'Bar' }
+    ]
   }
 })
 </script>
