@@ -32,3 +32,20 @@
 - The core library is focused on the view layer only
 @ulend
 @snapend
+
+---
+@title[Why Vue?]
+
+@snap[north-west]
+#### Why Vue?
+@snapend
+
+@snap[west span-100]
+@ul[spaced text-white]
+- Very Small Size
+- Easy to Understand and Develop
+- Simple Integration
+- Detailed Documentation
+- Integrate with other libraries or existing projects
+@ulend
+@snapend
