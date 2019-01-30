@@ -89,11 +89,39 @@
 ---
 @title[Vue Instance]
 
-@snap[west span-100]
+@snap[west span-50]
 ## Every Vue application starts by creating a new Vue instance with the Vue function:
 @snapend
-```js
-var vm = new Vue({
-  // options
-})
+
+@snap[east span-50]
+```html
+<html>
+   <head>
+      <title>VueJs Instance</title>
+      <script type = "text/javascript" src = "js/vue.js"></script>
+   </head>
+   <body>
+      <div id = "vue_det">
+         <h1>Firstname : {{firstname}}</h1>
+         <h1>Lastname : {{lastname}}</h1>
+         <h1>{{mydetails()}}</h1>
+      </div>
+      <script type = "text/javascript">
+        var  vm = new Vue({
+           el: '#vue_det',
+           data: {
+              firstname : "Ria",
+              lastname  : "Singh",
+              address    : "Mumbai"
+           },
+           methods: {
+              mydetails : function() {
+                 return "I am "+this.firstname +" "+ this.lastname;
+              }
+           }
+        })
+    </script>
+   </body>
+</html>
 ```
+@snapend
