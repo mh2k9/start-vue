@@ -276,7 +276,9 @@ var example1 = new Vue({
 ```
 
 ---
+@snap[north-west]
 #### Vue Routing
+@snapend
 
 @snap[west span-100]
 @ul[spaced text-white]
@@ -327,16 +329,12 @@ The content that needs to be reused across the project. We can convert the same 
 ---
 #### Render function
 
-@snap[west span-50]
-@ul[spaced text-white]
+
 - Render data/values to template
 - Used for repetitive components
 - Data isolation using <i>slot</i>
 - Pass data using <i>props</i> attributes
-@ulend
-@snapend
 
-@snap[east span-50]
 ```html
 <div id = "component_test">
    <testcomponent v-bind:itemid="item">Hello Jai</testcomponent>
@@ -358,20 +356,14 @@ The content that needs to be reused across the project. We can convert the same 
    });
 </script>
 ```
-@snapend
 
 ---
 #### Reactive Interface
 
-@snap[west span-50]
-@ul[spaced text-white]
 - *VueInstance.$watch()* the change of certain property
 - *Vue.set* to add a property to the vue instance
 - *Vue.delete* to remove a certain property from the vue instance
-@ulend
-@snapend
 
-@snap[east span-50]
 ```html
 <script type = "text/javascript">
    var myproduct = {"id":1, name:"book", "price":"20.00"};
@@ -389,7 +381,6 @@ The content that needs to be reused across the project. We can convert the same 
    });
 </script>
 ```
-@snapend
 
 ---
 #### Progressive Web App (PWA)
