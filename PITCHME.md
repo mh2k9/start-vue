@@ -87,6 +87,7 @@
 @snapend
 
 ---
+#### Vue Instance
 Every Vue application starts by creating a new [Vue Instance](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram) with the Vue function:
 
 ```js
@@ -96,7 +97,8 @@ var vm = new Vue({
 ```
 
 ---
-Vue.js uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying Vue instance’s data. All Vue.js templates are valid HTML that can be parsed by spec-compliant browsers and HTML parsers
+#### Vue Template
+Vue.js uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying Vue instance’s data.
 
 ```html
 <!--Text -->
@@ -113,4 +115,26 @@ Vue.js uses an HTML-based template syntax that allows you to declaratively bind 
 
 <!--Using JavaScript Expressions-->
 {{ ok ? 'YES' : 'NO' }}
+```
+
+---
+#### Vue Components
+Components are reusable Vue instances with a name. We can use this component as a custom element inside a root Vue instance
+
+```html
+Vue.component('button-counter', {
+  data: function () {
+    return {
+      count: 0
+    }
+  },
+  template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+})
+
+<div id="components-demo">
+  <button-counter></button-counter>
+</div>
+
+new Vue({ el: '#components-demo' })
+
 ```
