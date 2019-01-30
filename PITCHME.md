@@ -274,3 +274,145 @@ var example1 = new Vue({
 })
 </script>
 ```
+
+---
+#### Vue Routing
+
+@snap[west span-100]
+@ul[spaced text-white]
+- Vue Router supports nested route/view mapping
+- Modular, component-based router configuration
+- Route params, query, wildcards
+- View transition effects
+- Fine-grained navigation control
+- Links with automatic active CSS classes
+- HTML5 history mode or hash mode
+- Auto-fallback in IE9
+- Customizable Scroll Behavior
+@ulend
+@snapend
+
+---
+#### Mixin
+Basically used for components. For reusable, reduce code stuffs. All properties become member of components
+
+```html
+<script type = "text/javascript">
+   var vm = new Vue({
+      el: '#databinding',
+      data: {},
+      methods : {},
+   });
+   var myMixin = {
+      created: function () {
+         this.startmixin()
+      },
+      methods: {
+         startmixin: function () {
+            alert("Welcome  to mixin example");
+         }
+      }
+   };
+   var Component = Vue.extend({
+      mixins: [myMixin]
+   })
+   var component = new Component();
+</script>
+```
+
+---
+#### Render function
+The content that needs to be reused across the project. We can convert the same as a component and use it.
+
+---
+#### Render function
+
+@snap[west span-50]
+@ul[spaced text-white]
+- Render data/values to template
+- Used for repetitive components
+- Data isolation using <i>slot</i>
+- Pass data using <i>props</i> attributes
+@ulend
+@snapend
+
+@snap[east span-50]
+```html
+<div id = "component_test">
+   <testcomponent v-bind:itemid="item">Hello Jai</testcomponent>
+   <testcomponent v-bind:itemid="item">Hello Roy</testcomponent>
+   <testcomponent v-bind:itemid="item">Hello Ria</testcomponent>
+   <testcomponent v-bind:itemid="item">Hello Ben</testcomponent>
+</div>
+<script type = "text/javascript">
+   Vue.component('testcomponent',{
+      template : '<h1><slot></slot></h1>',
+      data: function() {
+        item: "an item"
+      },
+      methods:{
+      }
+   });
+   var vm = new Vue({
+      el: '#component_test'
+   });
+</script>
+```
+@snapend
+
+---
+#### Reactive Interface
+
+@snap[west span-50]
+@ul[spaced text-white]
+- *VueInstance.$watch()* the change of certain property
+- *Vue.set* to add a property to the vue instance
+- *Vue.delete* to remove a certain property from the vue instance
+@ulend
+@snapend
+
+@snap[east span-50]
+```html
+<script type = "text/javascript">
+   var myproduct = {"id":1, name:"book", "price":"20.00"};
+   var vm = new Vue({
+      el: '#app',
+      data: {
+         counter: 1,
+         products: myproduct
+      }
+   });
+   Vue.set(myproduct, 'quantity');
+   Vue.delete(myproduct, 'price');
+   vm.$watch('counter', function(nval, oval) {
+      alert('Counter is incremented :' + oval + ' to ' + nval + '!');
+   });
+</script>
+```
+@snapend
+
+---
+#### Progressive Web App (PWA)
+
+@snap[west span-100]
+@ul[spaced text-white]
+- Reliable - Load instantly and never show the downasaur, even in uncertain network conditions.
+- Fast - Respond quickly to user interactions with silky smooth animations and no janky scrolling.
+- Engaging - Feel like a natural app on the device, with an immersive user experience.
+- Home scree supported
+- Native flavor
+- Offline support
+- Responsive design
+@ulend
+@snapend
+
+---
+#### Reference
+
+- [https://vuejs.org/v2/guide/](https://vuejs.org/v2/guide/)
+- [https://www.tutorialspoint.com/vuejs/](https://www.tutorialspoint.com/vuejs/)
+- [https://vuejsdevelopers.com/2018/04/23/vue-boilerplate-template-scaffold/](https://vuejsdevelopers.com/2018/04/23/vue-boilerplate-template-scaffold/)
+
+---
+#### Question ans Answer
+![](src/assets/qa.png)
