@@ -14,28 +14,19 @@
 ![](src/assets/evan.jpeg)
 @snapend
 
-## Mahadi Hasan
-### Software Engineer
-### W3Engineers Ltd.
+## Evan You
+### Creator Vue & Core Dev at Meteor
+#### Previously worked as a Creative Technologist at Google. From 2016 working full-time on Vue.JS framework
 
 ---?color=#E58537
-@title[Add A Little Imagination]
-
-@snap[north-west]
-#### Add a splash of @color[cyan](**color**) and you are ready to start presenting...
-@snapend
+## @color[cyan](**Add A Little Imagination**)
 
 @snap[west span-55]
 @ul[spaced text-white]
-- You will be amazed
-- What you can achieve
-- *With a little imagination...*
-- And **GitPitch Markdown**
+- Vue (pronounced like view)
+- Progressive framework for building user interfaces
+- The core library is focused on the view layer only
 @ulend
-@snapend
-
-@snap[east span-45]
-@img[shadow](assets/img/conference.png)
 @snapend
 
 ---?image=assets/img/presenter.jpg
