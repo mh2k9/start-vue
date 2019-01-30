@@ -26,3 +26,7 @@
   color: white;
   font-weight: bold;
 }
+
+.auth-pic img {
+  border-radius: 500%;
+}

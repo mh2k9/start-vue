@@ -1,8 +1,6 @@
 # Points of VueJS
 
----
-
-@snap[west span-50]
+@snap[west auth-pic]
 ## Mahadi Hasan
 ### Software Engineer
 ### W3Engineers Ltd.
