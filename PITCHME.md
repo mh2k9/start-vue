@@ -21,7 +21,7 @@
 ---
 ## @color[cyan](**What is Vue?**)
 
-@snap[north span-100]
+@snap[north span-55]
 @ul[spaced text-white]
 - Vue (pronounced like view)
 - Progressive framework for building user interfaces
