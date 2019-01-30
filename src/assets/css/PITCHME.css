@@ -15,7 +15,8 @@
 }
 
 h4 {
-  font-weight: bold;
+  font-weight: bold !important;
+  color: DarkSlateGrey !important;
 }
 
 .reveal section img {
