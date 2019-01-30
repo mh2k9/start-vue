@@ -7,7 +7,7 @@
 }
 
 .headline h2 {
-  color: white;
+  color: black;
   letter-spacing: 0.05em;
   font-variant: small-caps;
 }
@@ -19,11 +19,11 @@
 }
 
 .reveal a {
-  color: white;
+  color: black;
 }
 
 .reveal a:hover {
-  color: white;
+  color: darkred;
   font-weight: bold;
 }
 
