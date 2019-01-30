@@ -25,7 +25,7 @@
 #### What is Vue?
 @snapend
 
-@snap[west span-55]
+@snap[west span-100]
 @ul[spaced text-white]
 - Vue (pronounced like view)
 - Progressive framework for building user interfaces
