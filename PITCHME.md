@@ -125,3 +125,93 @@
 </html>
 ```
 @snapend
+
+---
+
+@title[Vue Instance]
+
+@snap[north-west span-100 text-10]
+#### Every Vue application starts by creating a new Vue instance with the Vue function:
+@snapend
+
+```
+<html>
+   <head>
+      <title>VueJs Instance</title>
+      <script type = "text/javascript" src = "js/vue.js"></script>
+   </head>
+   <body>
+      <div id = "vue_det">
+         <h1>Firstname : {{firstname}}</h1>
+         <h1>Lastname : {{lastname}}</h1>
+         <h1>{{mydetails()}}</h1>
+      </div>
+      <script type = "text/javascript">
+        var  vm = new Vue({
+           el: '#vue_det',
+           data: {
+              firstname : "Ria",
+              lastname  : "Singh",
+              address    : "Mumbai"
+           },
+           methods: {
+              mydetails : function() {
+                 return "I am "+this.firstname +" "+ this.lastname;
+              }
+           }
+        })
+    </script>
+   </body>
+</html>
+```
+
+---?code=src/snippets/vue-instance.html&lang=html
+
+@title[Vue Instance]
+
+@snap[north-west span-100 text-10]
+#### Every Vue application starts by creating a new Vue instance with the Vue function:
+@snapend
+
+---?code=src/snippets/vue-instance-smalltabs.html&lang=html
+
+@title[Vue Instance]
+
+@snap[north-west span-100 text-10]
+#### Every Vue application starts by creating a new Vue instance with the Vue function:
+@snapend
+
+---
+
+@title[Vue Instance]
+
+@snap[north-west span-100 text-10]
+#### Every Vue application starts by creating a new Vue instance with the Vue function:
+@snapend
+
+@code[html](src/snippets/vue-instance.html)
+
+
+---
+
+@title[Vue Instance]
+
+@snap[west span-50]
+#### Every Vue application starts by creating a new Vue instance with the Vue function:
+@snapend
+
+@snap[east span-50 zoom-06]
+@code[html](src/snippets/vue-instance.html)
+@snapend
+
+---
+
+@title[Vue Instance]
+
+@snap[west span-25]
+#### Every Vue application starts by creating a new Vue instance with the Vue function:
+@snapend
+
+@snap[east span-75 zoom-08]
+@code[html](src/snippets/vue-instance.html)
+@snapend
