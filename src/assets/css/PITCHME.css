@@ -53,6 +53,10 @@ p {
   font-size: 30px;
 }
 
+.reveal p {
+  font-size: 30px;
+}
+
 .reveal pre {
   width: 100% !important;
 }
