@@ -18,10 +18,10 @@
 ### Creator Vue & Core Dev at Meteor
 #### Previously worked as a Creative Technologist at Google. From 2016 working full-time on Vue.JS framework
 
----?color=#E58537
-### @color[cyan](**What is Vue?**)
+---
+## @color[cyan](**What is Vue?**)
 
-@snap[west span-55]
+@snap[north span-100]
 @ul[spaced text-white]
 - Vue (pronounced like view)
 - Progressive framework for building user interfaces
