@@ -16,7 +16,6 @@
 @snapend
 
 ## Evan You
-### Creator Vue & Core Dev at Meteor
 ### Previously worked as a Creative Technologist at Google. From 2016 working full-time on Vue.JS framework
 
 ---
