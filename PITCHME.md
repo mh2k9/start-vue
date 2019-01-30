@@ -89,33 +89,32 @@
 ---
 @title[Vue Instance]
 
-#### Every Vue application starts by creating a new Vue instance with the Vue function:
+#### Every Vue application starts by creating a new [Vue Instance](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram) with the Vue function:
+
+```js
+var vm = new Vue({
+  // options
+})
+```
+
+---
+@title[Vue Template]
+
+#### Vue.js uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying Vue instance’s data. All Vue.js templates are valid HTML that can be parsed by spec-compliant browsers and HTML parsers.
 
 ```html
-<html>
-   <head>
-      <title>VueJs Instance</title>
-      <script type = "text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
-   </head>
-   <body>
-      <div id = "vue_det">
-         <p>Firstname : {{firstname}}</p>
-         <p>Lastname : {{lastname}}</p>
-         <p>{{mydetails()}}</p>
-      </div>
-      <script type="text/javascript">
-        var  vm = new Vue({
-           el: '#vue_det',
-           data: {
-              firstname : "Ria", lastname  : "Singh", address    : "Mumbai"
-           },
-           methods: {
-              mydetails : function() {
-                 return "I am " + this.firstname + " " + this.lastname;
-              }
-           }
-        })
-      </script>
-   </body>
-</html>
+<!--Text -->
+<span>Message: {{ msg }}</span>
+<span v-once>This will never change: {{ msg }}</span>
+
+<!--Raw HTML-->
+<p>Using mustaches: {{ rawHtml }}</p> <!--Wrong-->
+<p>Using v-html directive: <span v-html="rawHtml"></span></p> <!--Correct-->
+
+<!--Attributes-->
+<div v-bind:id="dynamicId"></div>
+<button v-bind:disabled="isButtonDisabled">Button</button>
+
+<!--Using JavaScript Expressions-->
+{{ ok ? 'YES' : 'NO' }}
 ```
