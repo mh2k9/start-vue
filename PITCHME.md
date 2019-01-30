@@ -19,11 +19,10 @@
 #### Previously worked as a Creative Technologist at Google. From 2016 working full-time on Vue.JS framework
 
 ---
----?color=#E58537
-@title[Add A Little Imagination]
+@title[What is Vue]
 
 @snap[north-west]
-#### Add a splash of @color[cyan](**color**) and you are ready to start presenting...
+#### What is Vue?
 @snapend
 
 @snap[west span-55]
