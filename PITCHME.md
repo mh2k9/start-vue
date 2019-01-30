@@ -1,14 +1,13 @@
-# Points of VueJS
+@title[Basic concepts on VueJS]
 
-@snap[west auth-pic]
+@snap[auth-pic]
+![](src/assets/photo.png)
+@snapend
+
 ## Mahadi Hasan
 ### Software Engineer
 ### W3Engineers Ltd.
-@snapend
 
-@snap[east span-50]
-![](src/assets/photo.png)
-@snapend
 
 ---
 @title[Customize Slide Layout]
