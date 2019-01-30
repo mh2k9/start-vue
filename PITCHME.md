@@ -66,3 +66,34 @@
 - $ sudo npm start
 @ulend
 @snapend
+
+---
+@title[Important points of Vue]
+
+@snap[north-west]
+#### Important points of Vue
+@snapend
+
+@snap[west span-100]
+@ul[spaced text-white]
+- Directive
+- v-bind
+- v-model
+- v-on:event | @event
+- el: '#id'
+- data: { /* prop stuffs */ }
+- methods: { /* methods stuffs */ }
+@ulend
+@snapend
+
+---
+@title[Vue Instance]
+
+@snap[west span-100]
+## Every Vue application starts by creating a new Vue instance with the Vue function:
+@snapend
+```js
+var vm = new Vue({
+  // options
+})
+```
