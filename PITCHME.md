@@ -364,6 +364,26 @@ Basically used for components. For reusable, reduce code stuffs. All properties 
 ```
 
 ---
+#### Vue Unit Testing
+
+- For unit testing we are using [**jest**](https://github.com/facebook/jest) tool.
+- Add the following config in `package.json` file
+```JSON
+"jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  }
+```
+- Add the following commenting top of the test spec
+```JS
+/**
+ * @jest-environment node
+ */
+```
+- Add your necessary Test.spec.js in `test/unit/specs/` directory
+- Run the command to check test cases: `$ jest --config test/unit/jest.conf.js --coverage`
+
+---
 @snap[north-west]
 #### Progressive Web App (PWA)
 @snapend
@@ -385,6 +405,7 @@ Basically used for components. For reusable, reduce code stuffs. All properties 
 - [https://vuejs.org/v2/guide/](https://vuejs.org/v2/guide/)
 - [https://www.tutorialspoint.com/vuejs/](https://www.tutorialspoint.com/vuejs/)
 - [https://vuejsdevelopers.com/2018/04/23/vue-boilerplate-template-scaffold/](https://vuejsdevelopers.com/2018/04/23/vue-boilerplate-template-scaffold/)
+- [https://github.com/mh2k9/start-vue](https://github.com/mh2k9/start-vue)
 
 ---
 #### Question ans Answer
