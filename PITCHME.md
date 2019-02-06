@@ -377,7 +377,7 @@ Basically used for components. For reusable, reduce code stuffs. All properties 
  * @jest-environment node
  */
 ```
-- Add your necessary Test.spec.js in `test/unit/specs/` directory
+- Add your necessary [**Test.spec.js**](https://github.com/mh2k9/start-vue/blob/master/test/unit/specs/Test.spec.js) in `test/unit/specs/` directory
 - `$ jest --config test/unit/jest.conf.js --coverage`
 
 ---
